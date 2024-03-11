@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background-color: #007bff;
+    background-color:rgb(36, 63, 182 , 0.8);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -32,7 +32,68 @@ footer {
     text-align: center;
     bottom: 0;
     width: 100%;
+    border-right: #f4f4f4;
+
 }
 pre{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+a{
+    
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+
+    color: #ff0000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.modules{
+    border:black;
+    border-style:groove;
+    border-radius: 0.1;
+    word-spacing: normal;
+    padding: auto;
+
+}
+
+.l_up{
+
+    background-color: transparent;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search input[type=text] {
+    padding: 13px;
+    font-size: 13px;
+    border: none;
+    width: 80%;
+    background: rgb(0, 22, 63);
+    color: white;
+  }
+  
+  .search input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+ 
+  .search button {
+
+    width: 20%;
+    padding: 13px;
+    background: #ddd;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background: #bbb;
+  }

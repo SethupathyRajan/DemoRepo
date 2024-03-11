@@ -7,35 +7,94 @@
     <style>
         body{
             background-image: url(https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            font-size: xx-large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+       
         }
+
+        table input[type=text]{
+            padding: 20px;
+            font-size: 20px;
+            width: 200%;
+            background-color: transparent;
+            color: white;
+        }
+
+        table input[type=password]{
+            padding: 20px;
+            font-size: 20px;
+            width:200%;
+            background-color: transparent;
+            color: white;
+        }
+
         table{
-            background-color: rgb(0, 0, 0 ,0.8);
+            font-size: 20px;
             color: white;
             
         }
         h2{
             color: white;
         }
+
+        .sign{
+
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color:rgb(0, 0, 0 , 0.8);
+
+        }
+
+        .cont{
+            border-width: 20px;
+            padding: 20px;
+            font-size: 20px;
+            width:200%;
+            background-color: transparent;
+        }
     </style>
     <body>
+        <div class="sign">
         <form action="">
             <center><table>
                 <h2>Log in</h2>
                 <tr><td><label for="user_name">Username:</label></td><td><input type="text"></td></tr>
                 <tr><td><label for="pass">Password</label></td><td><input type="password"></td></tr>
                 </table>
-            <center><h2>OR</h2></center>
+            <center><h2 style="color: red;">OR</h2></center>
             <table> 
                 <h2>Sign Up</h2>
                 <tr><td><label for="user_name">Username:</label></td><td><input type="text"></td></tr>
                 <tr><td><label for="pass">Password</label></td><td><input type="password"></td></tr>
+            </center>
         </table>      
-        </form></center>
+        </form><br>
+        <center><button type="submit" style="    width: 20%;
+            padding: 20px;
+            background: #252525;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            color: white;">Submit</button></center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
         <center>
-            <table border="5">
-                <tr><a href=""><td><img src="" alt=""></td><td>Continue with Google</td></a></tr>
-                <tr><a href=""><td><img src="" alt=""></td><td>Continue with Facebook</td></a></tr>
+            <table border="4"  id="cont">
+                <tr><a href=""><td><img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png" height="50" width="50" alt=""></td><td>Continue with Google</td></a></tr>
+                <tr><a href=""><td><img src="https://w7.pngwing.com/pngs/213/828/png-transparent-facebook-logo-facebook-messenger-logo-social-media-icon-facebook-icon-blue-text-rectangle-thumbnail.png"  height="50" width="50" alt=""></td><td>Continue with Facebook</td></a></tr>
             </table>
         </center>
+
+   
+    </div>
     </body>
 </html>
