@@ -10,7 +10,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <link rel="stylesheet" href="styles.css">
-   
+   <style> /* Styles for layout */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .personal-details {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .allergies, .medical-conditions, .basic-parameters {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+    }</style>
     <body >
         <header>        
             <p style="text-align: left;"><a href="profile.html"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="Profile" height="50" width="50"></img></a><a href="homepage.html"><img src="https://cdn-icons-png.flaticon.com/512/7133/7133312.png" alt="Home" height="50" width="50"></img></a>
@@ -29,7 +46,39 @@
         <div class="search"><p style="text-align:right;"><form action=""><input type="text" placeholder="What are you Looking for?"><button type="submit">Submit</button></p>
         </div>
 </header>
-
+   
+ 
+  <body>
+  
+  <div class="container">
+    <div class="personal-details">
+      <h2>Personal Details</h2>
+      <img src="user.jpg" alt="User Image" width="150">
+      <p>Name: Name</p>
+      <p>Age: 30</p>
+      <p>Gender: Male</p>
+      <p>Blood Group: AB+</p>
+      <p>Date of Birth: January 1, 1990</p>
+    </div>
+  
+    <div class="allergies">
+      <h2>Allergies</h2>
+      <p>List of Allergies</p>
+    </div>
+  
+    <div class="medical-conditions">
+      <h2>Medical Conditions</h2>
+      <p>Patient's Medical Conditions</p>
+      
+    </div>
+  
+    <div class="basic-parameters">
+      <h2>Others</h2>
+      <p>Haemoglobin Level: 12 g/dL</p>
+      <p>Sugar Level: 110 mg/dL</p>
+     
+    </div>
+  </div>
 
 
 <footer>
