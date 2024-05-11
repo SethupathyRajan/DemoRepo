@@ -5,7 +5,7 @@
   <meta name="description" content="Health Care ">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Praveen Kumar & Sethupathy">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
   <style>
 img {
     max-width: 100%;
@@ -20,7 +20,7 @@ img {
     height: 100vh;">
         <h1>BOOK APPOINMENT</h1>
         <table align="center" >
-        <form >
+            <form name="appointmentForm" method="post" action="appointment.php" onsubmit="return validateForm()">
             <tr><td><label><b>NAME:</b></label></td>
             <td><input type="text" name="i1"></td></tr>
             <tr><td><label><b>AGE:</b></label></td>
@@ -31,10 +31,28 @@ img {
             <td><input type="email" name="i4"></td></tr>
             <tr><td><label><B>DATE OF APPOINMENT:</B></label></td>
             <td><input type="date" name="i5"></td></tr><br>
-            </form>
+            
             </table><br>
             <label style="color:whitesmoke;"><b>MALE</b></label><input type="radio" name="i6">
             <label style="color: aliceblue;"><b>FEMALE</b></label><input type="radio" name="i6"><BR><BR>
-        <button style="border-radius: 12px;background-color: antiquewhite;">CANCEL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BUTton style="background-color: rgb(76, 199, 76);border-radius: 12px;">SUBMIT</BUTton>
+        <a href="index.html"><button style="border-radius: 12px;background-color: antiquewhite;">CANCEL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit"  style="background-color: rgb(76, 199, 76);border-radius: 12px;">
+    </form>
+    <script>
+        function validateForm() {
+            var name = document.forms["appointmentForm"]["i1"].value;
+            var age = document.forms["appointmentForm"]["i2"].value;
+            var contact = document.forms["appointmentForm"]["i3"].value;
+            var email = document.forms["appointmentForm"]["i4"].value;
+            var date = document.forms["appointmentForm"]["i5"].value;
+            var gender = document.querySelector('input[name="i6"]:checked');
+        
+            if (name == "" || age == "" || contact == "" || email == "" || date == "" || gender == null) {
+                alert("Please fill out all fields");
+                return false;
+            }
+        }
+        </script>
+        
     </body>
+    
 </html>
